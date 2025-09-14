@@ -1,0 +1,101 @@
+/* Reset default margins */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+}
+
+/* Profile picture */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+/* Headings */
+h1 {
+  margin: 15px 0 5px;
+  font-size: 26px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 25px;
+  color: #f0f0f0;
+}
+
+/* Links */
+.links a {
+  display: block;
+  margin: 12px auto;
+  padding: 14px;
+  background: #fff;
+  color: #6e8efb;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 250px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.links a i {
+  margin-right: 8px;
+}
+
+.links a:hover {
+  background: #6e8efb;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Portfolio section */
+h2 {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.portfolio .item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.portfolio img, 
+.portfolio video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
